@@ -91,3 +91,97 @@ print(thislist)
 thislist.pop() #deletes orange, the last item
 print(thislist)
 
+#Deleting the list
+del thislist
+#print(thislist) #Results in error
+
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist) #Prints empty brackets
+
+#LOOPING THROUGH A LIST
+
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x) #prints each item on different  line
+
+for i in range(len(thislist)): #caicuates length, then uses length to loop through range
+  print(thislist[i]) #prints all three items
+
+#While Loop through a list
+
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1 #add one until reaches length of list
+  print(i)
+else:
+    print("Hit end of list")
+
+#Shortest syntax for printing a list, but does not make sense
+[print(x) for x in thislist]
+
+
+#LIST COMPREHENSION
+
+#First, without list comprehension
+#I want a list with only fruits that have A in it
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+    if "a" in x:
+        newlist.append(x) #adding fruits with a in it, to the NEWLIST
+
+print(newlist) #prints apple, banana, mango
+
+#Now, with list comprehension
+#I want  alist with only fruits with E in it
+newlist = [x for x in fruits if "e" in x]
+print(newlist) #prints cherry and apple
+
+
+#SORTING LISTS
+
+#sorts alphabetically
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+#sorts numerically
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+#sorts descending
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+#sorting based on how close it is to 50
+
+def myfunc(n):
+    return abs(n - 50)
+
+thislist = [100, 50 , 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
+#CASE Sensitive sorting
+thislist = ["banana", "Orange", "kiwi", "Cherry"]
+thislist.sort()
+print(thislist)
+
+#Avoid case sensitive sorting by specifying a key
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower) #sort alphabetically
+print(thislist)
+
+#COPY THE LISTS
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+
+
+
