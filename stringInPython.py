@@ -57,6 +57,16 @@ print(b[3:]) #slicing form the fourth character beyond
 #Negative Indexes
 print(b[-5:-2]) #does not start at zero
 
+#MODIFYING STRINGS
+a = " Hello, World! "
+print(a.upper()) #CAPITALIZES EVERYTHING LIKE THIS
+print(a.lower()) #lowercases everything like this
+print(a.strip()) #removes whitespace from beginning and the end
+print(a.replace("H", "J")) #replaces H with J, creating a Jello World
+print(a.split(","))
 
-
-
+#CONCATENATION
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
