@@ -148,6 +148,57 @@ myfunc2() #new global x will not be declared without running this function, and 
 
 print("Python is " + x)
 
+#PYTHON DATA TYPES
+
+#Text Type: str
+x = "Hello World" #string
+print(type(x))
+
+#Numeric Types: int, float, complex
+x = 20
+print(type(x)) #integer
+x = 20.1
+print(type(x)) #float
+x = 1j
+print(type(x)) #complex
+
+#Sequence Types: list, tuple, range
+x = ["apple", "banana", "cherry"]
+print(type(x)) # list of fruits
+x = ("apple", "banana", "cherry")
+print(type(x)) # tuple of fruits
+x = range(6)
+print(type(x)) # range of numbers (0,5)
+
+#Mapping Type: dict
+x = {"apple" : "John", "age" : 36}
+print(type(x))
+
+#Set Types: set, frozenset
+x = {"apple", "banana", "cherry"}
+print(type(x)) # set of fruits
+x = frozenset({"apple", "banana", "cherry"})
+print(type(x)) #frozen set of fruits
+
+#Boolean Type: bool
+x = True
+print(type(x)) #boolean
+
+#Binary Types: bytes, bytearray, memoryview
+x = b"Hello"
+print(type(x)) #bytes
+x = bytearray(5)
+print(type(x)) ##byte array
+x = memoryview(bytes(5))
+print(type(x)) #memoryview
+
+#None Type: NoneType
+x = None
+print(type(x)) #NoneType
+
+
+
+
 
 
 
