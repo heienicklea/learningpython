@@ -68,6 +68,86 @@ myvar2 = "John"
 #  --  my-var = "John"
 #  --  my var = "John"
 
+#Camel Case
+myVariableName = "John"
+
+#Pascal Case
+MyVariableName = "John"
+
+#Snake Case
+my_variable_name = "John"
+
+#Assigning Three Variables at Once (number of values must match on both sides)
+x, y, z = 'Orange', 'Banana', 'Cherry'
+print(x)
+print(y)
+print(z)
+
+#Orange is the best, so it will take everything. Assigning all to one
+
+x = y = z = "Orange"
+
+#Creating a collection of fruits, then unpacking
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+#All about output
+
+x = "Python is Alright"
+print(x)
+
+#using a comma to output strings separetely
+x = "Python"
+y = "is"
+z = "Alright"
+print(x, y, z)
+
+#or separating the words with plus signs (Notice no spaces will results in string combined)
+x = "Python"
+y = "is"
+z = "Alright"
+print(x + y + z)
+
+#or separating the words (Spaces added to make correct sentence)
+x = "Python "
+y = "is "
+z = "Alright"
+print(x + y + z)
+
+
+#Doing some math in print statement (printing 15)
+x = 5
+y = 10
+print(x + y)
+
+#ERROR ALERT
+#String and integer together combined makes an error:
+#x = 5
+#y = "John"
+#print(x + y) ERROR
+
+#GLOBAL VERSUS INSIDE VARIABLES (THINK C)
+x = "awesome" #This is a global variable
+
+def myfunc():
+    print("Python is " + x) #using the global variable within the function
+
+myfunc() #will print Python is awesome using global variable
+
+#you can declare global variables within functions, but looks weird usually
+
+def myfunc2():
+    global x
+    x = "fantastic"
+
+myfunc2() #new global x will not be declared without running this function, and python will
+#awesome from above instead of fantastic
+
+print("Python is " + x)
+
 
 
 
