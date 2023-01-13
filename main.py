@@ -206,4 +206,3 @@ print(type(x)) #NoneType
 
 
 
-
